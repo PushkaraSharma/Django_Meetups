@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block site_css %}
-<link rel="stylesheet" href="{% static 'meetups/styles/meetup-details.css'%}">
+<link rel="stylesheet" href="{% static 'meetups/styles/meetup_details.css'%}">
 {% endblock %}
 
 {% block main_heading %}
@@ -28,7 +28,7 @@
         <h2>What's This meetup is all about?</h2>
         <p>{{ meetup.description }}</p>
         <footer>
-            <p>Need more details? Please <a href="">contact the organizer</a> but don't spam please</p>
+            <p>Need more details? Please <a href="mailto:{{ meetup.organizer_email }}">contact the organizer</a> but don't spam please</p>
         </footer>
     </section>
     <section id="registration">
